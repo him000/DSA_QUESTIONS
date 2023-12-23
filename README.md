@@ -1,2 +1,4 @@
 # DSA_QUESTIONS
-DSA Coding Questions
+<b>Array</b> <br>
+<ol>
+  <li> <a href = "https://leetcode.com/problems/next-permutation/">Next Permutation</a> </li>
