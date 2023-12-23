@@ -4,7 +4,7 @@
   <li> <a href = "https://leetcode.com/problems/next-permutation/">Next Permutation</a> </li>
 </ol>
 
-#C++ STL
+# C++ STL
 <h3>Vector</h3>
 size() --> returns the number of element in vector <br>
 reverse(arr.begin() , arr.end()) --> reverse the vector <br>
