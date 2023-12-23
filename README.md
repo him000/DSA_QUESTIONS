@@ -2,6 +2,7 @@
 <b>Array</b> <br>
 <ol>
   <li> <a href = "https://leetcode.com/problems/next-permutation/">Next Permutation</a> </li>
+  <li><a href = "https://leetcode.com/problems/sort-colors/description/">Sort Array of 0s, 1s and 2s</a></li>
 </ol>
 
 # C++ STL
