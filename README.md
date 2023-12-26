@@ -24,10 +24,10 @@
   <li><a href = ""></a></li>
   <li><a href=""> </a></li>
 </ol>
-<b>Array</b> <br>
+<b>Graph</b> <br>
 <ol>
-  <li><a href = ""></a></li>
-  <li><a href=""> </a></li>
+  <li><a href = "https://practice.geeksforgeeks.org/problems/depth-first-traversal-for-a-graph/1">DFS</a></li>
+  <li><a href = ""> </a></li>
 </ol>
 <b>Array</b> <br>
 <ol>
@@ -50,3 +50,5 @@ q.push({1,2})    --> push pai in queue <br>
 <h3> String </h3>
 str.pop_back()      --> remove last element from string named str<br>
 to_string( number ) --> convert a number to string <br>
+
+<h3> </h3>
