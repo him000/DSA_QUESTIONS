@@ -3,15 +3,37 @@
 <ol>
   <li> <a href = "https://leetcode.com/problems/next-permutation/">Next Permutation</a> </li>
   <li><a href = "https://leetcode.com/problems/sort-colors/description/">Sort Array of 0s, 1s and 2s</a></li>
-  <li><a href="https://leetcode.com/problems/maximum-width-of-binary-tree/description/">Maximum Width of Binary tree </a></li>
+  <li><a href="https://leetcode.com/problems/maximum-width-of-binary-tree/description/"> </a></li>
 </ol>
 
 <b>String</b> <br>
 <b>Binary Tree</b> <br>
+<ol>
+  <li> <a href = "https://leetcode.com/problems/maximum-width-of-binary-tree/description/">Max Width of Binary Tree</a> </li>
+  <li><a href = ""></a></li>
+  <li><a href=""> </a></li>
+</ol>
+
 <b>Heap</b> <br>
+<ol>
+  <li><a href = ""></a></li>
+  <li><a href=""> </a></li>
+</ol>
 <b>Stack and Queue</b> <br>
+<ol>
+  <li><a href = ""></a></li>
+  <li><a href=""> </a></li>
+</ol>
 <b>Array</b> <br>
+<ol>
+  <li><a href = ""></a></li>
+  <li><a href=""> </a></li>
+</ol>
 <b>Array</b> <br>
+<ol>
+  <li><a href = ""></a></li>
+  <li><a href=""> </a></li>
+</ol>
 <b>Array</b> <br>
 # C++ STL
 <h3>Vector</h3>
