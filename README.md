@@ -6,6 +6,13 @@
   <li><a href="https://leetcode.com/problems/maximum-width-of-binary-tree/description/">Maximum Width of Binary tree </a></li>
 </ol>
 
+<b>String</b> <br>
+<b>Binary Tree</b> <br>
+<b>Heap</b> <br>
+<b>Stack and Queue</b> <br>
+<b>Array</b> <br>
+<b>Array</b> <br>
+<b>Array</b> <br>
 # C++ STL
 <h3>Vector</h3>
 size() --> returns the number of element in vector <br>
