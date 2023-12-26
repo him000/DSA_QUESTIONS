@@ -10,7 +10,7 @@
 <b>Binary Tree</b> <br>
 <ol>
   <li> <a href = "https://leetcode.com/problems/maximum-width-of-binary-tree/description/">Max Width of Binary Tree</a> </li>
-  <li><a href = ""></a></li>
+  <li><a href = "https://leetcode.com/problems/binary-tree-paths/solutions/">Binary Tree Paths</a></li>
   <li><a href=""> </a></li>
 </ol>
 
