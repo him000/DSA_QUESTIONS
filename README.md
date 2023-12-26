@@ -37,6 +37,7 @@
 <b>Array</b> <br>
 # C++ STL
 <h3>Vector</h3>
+push_back() --> push element at the end of vector <br>
 size() --> returns the number of element in vector <br>
 reverse(arr.begin() , arr.end()) --> reverse the vector <br>
 reverse(arr.begin() + 1 , arr.end() - 1 ) --> reverse the sub part of vector <br>
@@ -46,3 +47,6 @@ queue<int> q ; --> Creating a Queue in which each element is integer <br>
 queue< pair<int,int> > q ; --> Queue of pairs <br>
 q.push({1,2})    --> push pai in queue <br>
 
+<h3> String </h3>
+str.pop_back()      --> remove last element from string named str<br>
+to_string( number ) --> convert a number to string <br>
