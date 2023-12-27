@@ -29,9 +29,9 @@
   <li><a href = "https://practice.geeksforgeeks.org/problems/depth-first-traversal-for-a-graph/1">DFS</a></li>
   <li><a href = ""> </a></li>
 </ol>
-<b>Array</b> <br>
+<b>Sorting</b> <br>
 <ol>
-  <li><a href = ""></a></li>
+  <li><a href = "https://practice.geeksforgeeks.org/problems/quick-sort/1"> QuickSort </a></li>
   <li><a href=""> </a></li>
 </ol>
 <b>Array</b> <br>
