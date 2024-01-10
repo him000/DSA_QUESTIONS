@@ -27,7 +27,7 @@
 <b>Graph</b> <br>
 <ol>
   <li><a href = "https://practice.geeksforgeeks.org/problems/depth-first-traversal-for-a-graph/1">DFS</a></li>
-  <li><a href = ""> </a></li>
+  <li><a href = "https://leetcode.com/problems/course-schedule/description/">Course Scheduling ( Topological sort )</a></li>
 </ol>
 <b>Sorting</b> <br>
 <ol>
