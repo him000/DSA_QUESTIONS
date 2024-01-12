@@ -4,6 +4,7 @@
   <li> <a href = "https://leetcode.com/problems/next-permutation/">Next Permutation</a> </li>
   <li><a href = "https://leetcode.com/problems/sort-colors/description/">Sort Array of 0s, 1s and 2s</a></li>
   <li><a href="https://leetcode.com/problems/maximum-width-of-binary-tree/description/"> </a></li>
+  <li><a href= "https://www.codingninjas.com/studio/problems/merge-two-sorted-arrays-without-extra-space_6898839?utm_source=striver&utm_medium=website&utm_campaign=codestudio_a_zcourse&leftPanelTabValue=SUBMISSION">  Merge two sorted array without using extra space Type 1 </a></li>
 </ol>
 
 <b>String</b> <br>
