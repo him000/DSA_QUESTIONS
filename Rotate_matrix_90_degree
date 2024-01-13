@@ -1,0 +1,23 @@
+class Solution {
+public:
+    void rotate(vector<vector<int>>& matrix) 
+    {    
+        int i,j;
+      
+        // ( 90 degree rotation = transpose + Reverse the Rows ) 
+        //Find transpose first
+        for( i =0 ; i  < matrix.size() ; i++)
+        {
+            for( j = i + 1 ; j < matrix.size() ; j++)
+            {  
+              swap(matrix[i][j],matrix[j][i]);
+            }
+        }
+
+        // Revrese each row
+        for( i=0 ; i < matrix.size(); i++)
+        {
+          reverse(matrix[i].begin(),matrix[i].end());
+        }   
+    }
+};
