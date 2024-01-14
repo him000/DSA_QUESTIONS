@@ -1,0 +1,61 @@
+vector<int> findMissingRepeatingNumbers(vector < int > a) {
+    // Variable to store xor
+    int XOR = 0;
+    // varible to store the xor zero and one bit position number
+    int zero = 0,one = 0;
+
+    //traverse the loop tp find the xor of the array elements
+    for(int i=0; i<a.size(); i++)
+    {
+      XOR ^= a[i];
+    }
+    
+    // now find xor of element from 1 to N ,using the same varible used earlier
+    for(int i=1 ; i <= a.size(); i++)
+    {
+        XOR ^= i;
+    }
+  
+    // now we find the leftmost postion in xor varible when bit is set to 1
+    int finder = 1;
+    int position = 0;
+    while (!(XOR & finder)) 
+    {
+        position++;
+        finder = 1 << position;
+    }
+    
+    // now we classify the array elements and value from 1 to N into two parts
+    int classifier  = 1;
+    classifier = classifier << position;
+    for(int i=0; i<a.size(); i++)
+    {
+      if(a[i] & classifier )
+      one ^= a[i];
+      else
+      zero ^= a[i];
+    }
+    
+    // now find xor of element from 1 to N ,using the same varible used earlier
+    for(int i=1 ; i<=a.size(); i++)
+    {
+      if(i & classifier )
+      one ^= i;
+      else
+      zero ^= i;
+    }
+
+    // now variable one and two contain repeted and missing element
+    // but we do not know which one is repeating
+    // we run the loop to confirm this
+    for(int i = 0;i < a.size(); i++)
+    {
+      if(zero == a[i])
+      {
+        swap(one,zero);
+      }
+    }
+    
+    return {one,zero};
+
+}
