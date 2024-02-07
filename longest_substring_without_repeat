@@ -1,0 +1,32 @@
+class Solution {
+public:
+    int lengthOfLongestSubstring(string s) {
+        set <char> unique;// set to store element 
+        int j = 0;
+        int ans = 0;
+        int len = 0;
+        for(int i=0;i< s.length();i++)
+        {
+            if( unique.find(s[i]) == unique.end() )
+            {
+                unique.insert(s[i]);
+                len++;
+            }
+            else
+            {   
+                ans = max(ans,len);
+                while(s[i]!=s[j]){
+                    unique.erase(s[j]);
+                    j++;
+                    len--;
+                    
+                }
+                j++;
+
+            }
+        }
+
+        ans = max(len,ans);
+        return ans;
+    }
+};
