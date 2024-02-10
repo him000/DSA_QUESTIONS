@@ -9,7 +9,7 @@
   <li><a href = "https://leetcode.com/problems/rotate-image/"> Rotate a matrix 90 degree </a></li>
   <li><a href = "https://leetcode.com/problems/find-the-duplicate-number/description/"> Find Duplicate number </a></li>
   <li><a href = "https://www.codingninjas.com/studio/problems/missing-and-repeating-numbers_6828164?utm_source=striver&utm_medium=website&utm_campaign=codestudio_a_zcourse&leftPanelTabValue=PROBLEM">Repeating and Duplicate element in array </a></li>
-  <li><a href ="https://leetcode.com/problems/longest-substring-without-repeating-characters/description/">Longest submtring without repeat </a></li>
+  <li><a href ="https://leetcode.com/problems/longest-substring-without-repeating-characters/description/">Longest substring without repeat </a></li>
 </ol>
 
 <b>String</b> <br>
