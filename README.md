@@ -63,12 +63,14 @@ to_string( number ) --> convert a number to string <br>
 
 <h3> Sort Vector of pair </h3>
 vector< pair <int, int> > vect;
-sort(vect.begin(),vect.end()); // sort vector in ascending order based on first element
+sort vector in ascending order based on first element
+sort(vect.begin(),vect.end()); 
 
+ascending order based on second element
 bool <b>decision</b>(const pair<int,int> &a,
               const pair<int,int> &b))
 {
-  return a.second < b.second; // ascending order based on second element
+  return a.second < b.second; 
 }
 sort(vect.begin(),vect.end(),<b>decision</b>); // sort vector in ascending order based on second element
 
