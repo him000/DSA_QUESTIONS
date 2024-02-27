@@ -40,7 +40,11 @@
   <li><a href = "https://practice.geeksforgeeks.org/problems/quick-sort/1"> QuickSort </a></li>
   <li><a href=""> </a></li>
 </ol>
-<b>Array</b> <br>
+<b>Linked List</b> <br>
+<ol>
+  <li><a href = "https://leetcode.com/problems/reverse-linked-list/description/"> Reverse Linkedlist </a></li>
+  
+</ol>
 # C++ STL
 <h3>Vector</h3>
 push_back() --> push element at the end of vector <br>
