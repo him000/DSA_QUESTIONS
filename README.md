@@ -61,17 +61,18 @@ q.push({1,2})    --> push pai in queue <br>
 str.pop_back()      --> remove last element from string named str<br>
 to_string( number ) --> convert a number to string <br>
 
-<h3> Sort Vector of pair </h3>
-vector< pair <int, int> > vect;
-sort vector in ascending order based on first element
-sort(vect.begin(),vect.end()); 
+<h3> Sort Vector of pair </h3> <br>
+vector< pair < int, int > > vect; <br>
+sort vector in ascending order based on first element <br>
+sort(vect.begin(),vect.end()); <br>
 
-ascending order based on second element
-bool <b>decision</b>(const pair<int,int> &a,
-              const pair<int,int> &b))
+ascending order based on second element <br>
+<pre>
+bool <b>decision</b>(const pair<int,int> &a, const pair<int,int> &b)) 
 {
   return a.second < b.second; 
 }
+</pre> <br>
 sort(vect.begin(),vect.end(),<b>decision</b>); // sort vector in ascending order based on second element
 
 
