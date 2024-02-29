@@ -68,7 +68,7 @@ sort(vect.begin(),vect.end()); <br>
 
 ascending order based on second element <br>
 <pre>
-bool <b>decision</b>(const pair<int,int> &a, const pair<int,int> &b)) 
+bool <b>decision</b>(const pair&#60int,int&#62 &a, const pair&#60int,int&#62 &b)) 
 {
   return a.second < b.second; 
 }
