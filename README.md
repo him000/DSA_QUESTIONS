@@ -47,7 +47,8 @@
 
 <b>Greedy</b><br>
 <ol>
-  <li> a href = "https://www.geeksforgeeks.org/problems/minimum-platforms-1587115620/1#">Minimum number of platforms required for a railway </li>
+  <li> <a href = "https://www.geeksforgeeks.org/problems/minimum-platforms-1587115620/1#">Minimum number of platforms required for a railway</a> </li>
+  <li> <a href = "https://www.geeksforgeeks.org/problems/job-sequencing-problem-1587115620/1#">Job Sequencing Problem </a></li>
 </ol>
 
 # C++ STL
