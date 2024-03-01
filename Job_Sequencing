@@ -1,0 +1,58 @@
+/*
+struct Job 
+{ 
+    int id;	 // Job Id 
+    int dead; // Deadline of job 
+    int profit; // Profit if job is over before or on deadline 
+};
+*/
+bool compare(const struct Job &a, const struct Job &b)
+{
+    return a.profit > b.profit; // sort in decrasing order
+}
+class Solution 
+{
+    public:
+    //Function to find the maximum profit and the number of jobs done.
+    vector<int> JobScheduling(Job arr[], int n) 
+    { 
+        int jobs_done = 0;
+        int max_profit = 0;
+        vector<int> ans;
+        int profit = 0;
+        
+        bool place[n];
+        memset(place, false , sizeof(bool) * n);
+        
+        sort(arr,arr + n , compare);
+        
+        for( int i = 0; i< n ; i++)
+        {
+            int deadline;
+            deadline = arr[i].dead - 1;
+            
+            // find a place where we can perform the job
+            while( deadline >= 0 && place[deadline] == true)
+            {
+                deadline-- ;
+            }
+            
+            
+            if(deadline >=0 )
+            {
+                place[deadline] = true;
+                profit += arr[i].profit;
+                jobs_done++;
+                
+            }
+            
+            
+        }
+        
+        ans.push_back(jobs_done);
+        ans.push_back(profit);
+        
+        return ans;
+        
+    } 
+};
