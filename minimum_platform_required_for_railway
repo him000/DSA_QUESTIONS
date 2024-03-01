@@ -1,0 +1,49 @@
+class Solution{
+    public:
+    //Function to find the minimum number of platforms required at the
+    //railway station such that no train waits.
+    
+    int train_departed(int arr[], int dep[], int i, int *j, int n)
+    {
+        int departed = 0;
+        // second condition is important . if arrival and departure time is same for two train then first train is not departed yet
+        while(*j < n  && dep[*j] < arr[i]) 
+        {
+           //cout<<dep[*j] <<" "<< arr[i]<<endl;
+          if(*j == i)
+          break;
+          departed++;
+          (*j)++;
+        }
+        return departed;
+    }
+    int findPlatform(int arr[], int dep[], int n)
+    {
+    
+        sort(arr,arr+n);
+        sort(dep,dep+n);
+
+        int ans = 0;
+        int j = 0;
+        int departed_train = 0;
+        int count = 0;
+        
+        for(int i=0;i<n;i++)
+        {
+            count++;
+            if(i == 0)
+            {
+                ans = count;
+                continue;
+            }
+            //function to find how many trains have departed till now
+            departed_train = train_departed(arr,dep, i , &j, n);
+            count-=departed_train;
+            ans = max(ans,count);
+            
+            
+        }
+        
+        return ans;
+    }
+};
