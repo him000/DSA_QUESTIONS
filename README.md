@@ -43,8 +43,13 @@
 <b>Linked List</b> <br>
 <ol>
   <li><a href = "https://leetcode.com/problems/reverse-linked-list/description/"> Reverse Linkedlist </a></li>
-  
 </ol>
+
+<b>Greedy</b><br>
+<ol>
+  <li> a href = "https://www.geeksforgeeks.org/problems/minimum-platforms-1587115620/1#">Minimum number of platforms required for a railway </li>
+</ol>
+
 # C++ STL
 <h3>Vector</h3>
 push_back() --> push element at the end of vector <br>
