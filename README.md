@@ -60,8 +60,8 @@ reverse(arr.begin() , arr.end()) --> reverse the vector <br>
 reverse(arr.begin() + 1 , arr.end() - 1 ) --> reverse the sub part of vector <br>
 
 <h3>Data Structures</h3> 
-queue &#60 int &#60 q ; --> Creating a Queue in which each element is integer <br>
-queue &#60 pair &#60 int,int &#62 &#62 q ; --> Queue of pairs <br>
+queue &#60 int &#62 q ; --> Creating a Queue in which each element is integer <br>
+queue &#60&#60 int,int &#62&#62 q ; --> Queue of pairs <br>
 q.push({1,2})    --> push pai in queue <br>
 
 <h3> String </h3>
