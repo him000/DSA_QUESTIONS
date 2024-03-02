@@ -53,15 +53,15 @@
 
 # C++ STL
 <h3>Vector</h3>
-vector pair&#60 int pair&#62 arr(20) ; --> creating a vector with specific size
+vector &#60 int &#62 arr(20) ; --> creating a vector with specific size
 push_back() --> push element at the end of vector <br>
 size() --> returns the number of element in vector <br>
 reverse(arr.begin() , arr.end()) --> reverse the vector <br>
 reverse(arr.begin() + 1 , arr.end() - 1 ) --> reverse the sub part of vector <br>
 
 <h3>Data Structures</h3> 
-queue pair&#60 int pair&#60 q ; --> Creating a Queue in which each element is integer <br>
-queue pair&#60 pair pair&#60 int,int pair&#62 pair&#62 q ; --> Queue of pairs <br>
+queue &#60 int &#60 q ; --> Creating a Queue in which each element is integer <br>
+queue &#60 pair &#60 int,int &#62 &#62 q ; --> Queue of pairs <br>
 q.push({1,2})    --> push pai in queue <br>
 
 <h3> String </h3>
@@ -69,7 +69,7 @@ str.pop_back()      --> remove last element from string named str<br>
 to_string( number ) --> convert a number to string <br>
 
 <h3> Sort Vector of pair </h3> <br>
-vector pair&#60 int, int pair&#62  vect; <br>
+vector &#60 int, int &#62  vect; <br>
 sort vector in ascending order based on first element <br>
 sort(vect.begin(),vect.end()); <br>
 
