@@ -1,0 +1,57 @@
+
+
+/*The structure of the class is
+class SortedStack{
+public:
+	stack<int> s;
+	void sort();
+};
+*/
+
+// place the top element at correct location in stack
+void sort_st(stack<int> &st, int top)
+{
+    if(st.empty())
+    {
+        st.push(top);
+        return;
+    }
+    
+    if(top > st.top())
+    {
+        st.push(top);
+    }
+    else
+    {
+        int current;
+        current = st.top();
+        st.pop();
+        sort_st(st,top);
+        st.push(current);
+    }
+    
+    return;
+}
+
+//function  to interate stack recursively 
+void solve(stack<int> &st)
+{
+    int top;
+    if(st.empty())
+    return;
+    
+    top = st.top();
+    st.pop();
+    solve(st);
+    sort_st(st,top);
+    
+    return;
+    
+}
+/* The below method sorts the stack s 
+you are required to complete the below method */
+void SortedStack :: sort()
+{
+  solve(s);
+  return;
+}
