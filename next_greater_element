@@ -1,0 +1,34 @@
+class Solution
+{
+    public:
+    //Function to find the next greater element for each element of the array.
+    vector<long long> nextLargerElement(vector<long long> arr, int n){
+    stack <long long > st;
+	vector <long long > ans(n);
+	long long  current ; //current index in actual array
+	long long grt ; // next greater element
+
+	// running the loop 2n times for circular array
+	for(int i= 2*n-1; i >=0 ; i--)
+	{
+		if( i >= n )
+		current = i - n;
+		grt = -1;
+		while(!st.empty())
+		{
+			if(st.top() <= arr[current])
+			st.pop();
+			else
+			{
+			  grt = st.top();
+		      break;  
+			}	    
+		}
+
+		st.push(arr[current]);
+		ans[current] = grt ;
+	}
+
+	return ans;
+    }
+};
