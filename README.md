@@ -53,6 +53,7 @@
 
 # C++ STL
 <h3>Vector</h3>
+vector<int> arr(20) ; --> creating a vector with specific size
 push_back() --> push element at the end of vector <br>
 size() --> returns the number of element in vector <br>
 reverse(arr.begin() , arr.end()) --> reverse the vector <br>
