@@ -1,0 +1,153 @@
+struct node {
+    int i;
+    int key;
+    struct node *next;
+    struct node *prev;
+};
+class LRUCache {
+public:
+    struct node *head = NULL, *tail = NULL;
+    int size;
+    int used;
+    map <int, struct node*> data;
+    LRUCache(int capacity) {
+        size = capacity;
+        used = 0 ;
+
+    }
+    
+    int get(int key) {
+        
+        struct node *current = NULL;
+        struct node *n1 = NULL;
+        struct node *n2 = NULL;
+        struct node *n3 = NULL;
+        if(data.find(key) != data.end())
+        {
+            //if key is found return the number
+            current = data[key];
+            //update the recently used node
+            //if we access first element then no need to changes the position
+            //if there is only single element in LL no change required
+            if(current != head && head != tail)
+            {
+                n1 = head;
+                head = current;
+                cout<<"get "<<key<<endl;
+                n2 = current->prev;
+                n3 = current->next;
+                
+                current->prev = NULL;
+                current->next = n1;
+                
+                n1->prev = current;
+                
+                n2->next = n3;
+                
+                if(n3 != NULL)
+                {
+                    n3->prev = n2;
+                }
+                if(tail == current)
+                {
+                    tail = n2;
+                }
+                
+            }
+            return current->i ;
+        }
+        
+        return -1;
+    }
+    
+    void put(int key, int value) {
+        struct node *current = NULL;
+        struct node *front = NULL;
+        struct node *last = NULL;
+        struct node *n1 = NULL;
+        struct node *n2 = NULL;
+        struct node *n3 = NULL;
+        if(data.find(key) != data.end())
+        {
+            current = data[key];
+            current->i = value;
+            //if key is found return the number
+            //update the recently used node
+            //if we access first element then no need to changes the position
+            //if there is only single element in LL no change required
+            if(current != head && head != tail)
+            {
+                n1 = head;
+                head = current;
+                cout<<"get "<<key<<endl;
+                n2 = current->prev;
+                n3 = current->next;
+                
+                current->prev = NULL;
+                current->next = n1;
+                
+                n1->prev = current;
+                
+                n2->next = n3;
+                
+                if(n3 != NULL)
+                {
+                    n3->prev = n2;
+                }
+                if(tail == current)
+                {
+                    tail = n2;
+                }
+                
+            }
+        }
+        else
+        {
+            // check if we have used all space 
+            if(used >= size)
+            {
+                //remove the least recently used node
+                last = tail;
+                tail = last->prev;
+                if(tail != NULL)
+                {
+                    tail->next = NULL;
+                }
+                else
+                {
+                    head = NULL;
+                }
+                cout<<"erase "<<last->key<<endl;
+                data.erase(last->key);
+                free(last);
+                used --;
+            }
+            //now we have enoug space we can add new element to front
+            current = (struct node *)malloc(sizeof(struct node));
+            memset(current,0,sizeof(struct node));
+            data[key] = current;
+            current->key = key;
+            current->i = value;
+            front = head;
+            head = current;
+            current->prev = NULL;
+            current->next = front;
+            if(front == NULL)
+            {
+                tail = current;
+            }
+            else
+            {
+                front->prev = current;
+            }
+            used++;
+        }
+    }
+};
+
+/**
+ * Your LRUCache object will be instantiated and called as such:
+ * LRUCache* obj = new LRUCache(capacity);
+ * int param_1 = obj->get(key);
+ * obj->put(key,value);
+ */
