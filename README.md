@@ -43,6 +43,7 @@
 <b>Linked List</b> <br>
 <ol>
   <li><a href = "https://leetcode.com/problems/reverse-linked-list/description/"> Reverse Linkedlist </a></li>
+  <li><a href = "https://leetcode.com/problems/lru-cache/description/">LRU cache</a></li>
 </ol>
 
 <b>Greedy</b><br>
